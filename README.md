@@ -20,3 +20,6 @@ A local-exec provisioner is used to run a command that waits for 90 seconds befo
 # Running the Script
 
 First establish an AWS account. Create a user under IAM and create access keys for that user. If you already have keys you can utilize those. In the terminal configure aws with the aws configure command and enter the keys as prompted. 
+
+Note that the usual and recommended way to authenticate to AWS when using Terraform is via the AWS CLI, rather than any of the provider options listed above. To do this, first, install the AWS CLI, then type aws configure. You can then enter your access key ID, secret access key, and default region.
+
