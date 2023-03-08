@@ -27,3 +27,6 @@ Note that the usual and recommended way to authenticate to AWS when using Terraf
 
 ## Running the Script
 Once the credentials are created then you can run the script. Run in the CLI 'terraform init' to initialize terraform. Then run 'terraform plan' to review the script plan and catch any errors. Finally run 'terraform apply' to apply the script.
+
+## Considerations
+This script does not address edge cases. There is at the moment a conflict while accessing AWS credentials. This needs to be fixed.
