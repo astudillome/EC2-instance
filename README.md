@@ -13,7 +13,7 @@ E --> F[Run Terraform Apply];
 
 ## Process
 
-This script creates an AWS instance using the 'aws_instance' resource with a specific 'AMI ID' and instance type. 
+This script creates an AWS instance using the `aws_instance` resource with a specific AMI ID and instance type. 
 
 A `null_resource` is created so that it will act as a timer to automatically destroy the instance after 90 seconds. The `triggers` block specifies that the resource depends on the instance ID from the `aws_instance` resource. 
 
