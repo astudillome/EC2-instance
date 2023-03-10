@@ -21,12 +21,14 @@ A `local-exec` provisioner is used to run a command that waits for 90 seconds be
 
 ## AWS Credentials
 
-First establish an AWS account. Create a user under IAM and create access keys for that user. If you already have keys you can utilize those. In the terminal configure aws with the aws configure command and enter the keys as prompted. 
+First establish an AWS account. Create a user under IAM and create access keys for that user. If you already have keys you can utilize those. In the terminal configure aws with the `aws configure` command and enter the keys as prompted. 
 
 Note that the usual and recommended way to authenticate to AWS when using Terraform is via the AWS CLI. To do this, first, install the AWS CLI, then type `aws configure`. You can then enter your access key ID, secret access key, and default region.
+
+If you are having an issue accessing the credentials due to a token not valid. Delete the token from the credentials file.
 
 ## Running the Script
 Once the credentials are created then you can run the script. Run in the CLI `terraform init` to initialize terraform. Then run `terraform plan` to review the script plan and catch any errors. Finally run `terraform apply` to apply the script.
 
 ## Considerations
-This script does not address edge cases. There is at the moment a conflict while accessing AWS credentials. This needs to be fixed.
+This script does not address edge cases. The documentation can be improved with resources listed in the process.
